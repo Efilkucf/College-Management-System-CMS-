@@ -1,0 +1,218 @@
+/* Common Styles */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.search-container input {
+  width: 70%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.search-container button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.search-container button:hover {
+  transform: scale(1.05);
+}
+
+/* Details Table */
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.details-table th,
+.details-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.details-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.details-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.details-table tr:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+/* Course Details Styles */
+.course-details h2 {
+  color: #007bff;
+}
+
+.course-details .search-container input {
+  border: 2px solid #007bff;
+}
+
+.course-details .search-container button {
+  background-color: #007bff;
+}
+
+.course-details .search-container button:hover {
+  background-color: #0056b3;
+}
+
+.course-details .details-table th {
+  background-color: #e8f4fc;
+  color: #333;
+}
+
+.course-details .details-table tr:hover {
+  background-color: #d6ecfb;
+}
+
+/* Fees Details Styles */
+.fees-details h2 {
+  color: #FF5722;
+}
+
+.fees-details .search-container input {
+  border: 2px solid #FF5722;
+}
+
+.fees-details .search-container button {
+  background-color: #FF5722;
+}
+
+.fees-details .search-container button:hover {
+  background-color: #E64A19;
+}
+
+.fees-details .details-table th {
+  background-color: #FFE9E0;
+  color: #333;
+}
+
+.fees-details .details-table tr:hover {
+  background-color: #FFD7CC;
+}
+
+/* Student Marks Styles */
+.student-marks h2 {
+  color: #4CAF50;
+}
+
+.student-marks .search-container input {
+  border: 2px solid #4CAF50;
+}
+
+.student-marks .search-container button {
+  background-color: #4CAF50;
+}
+
+.student-marks .search-container button:hover {
+  background-color: #388E3C;
+}
+
+.student-marks .details-table th {
+  background-color: #E8F5E9;
+  color: #333;
+}
+
+.student-marks .details-table tr:hover {
+  background-color: #D0F0D9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .details-table th,
+  .details-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .details-table th,
+  .details-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .search-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

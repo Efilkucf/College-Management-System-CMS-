@@ -1,0 +1,20 @@
+.module {
+    padding: 20px;
+  }
+  
+  .module input {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .module ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .module li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e9ecef;
+  }
+  
